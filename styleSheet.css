@@ -1,18 +1,76 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #EAF6FF;
+    /* Soft Light Blue */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    color: #16324F;
+    /* Deep Ocean Blue */
 }
 
-/* Header */
+/* Header Styles */
 .header {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #3498db;
-    color: white;
+    background-color: #FFFFFF;
+    /* Pure White */
+    color: #16324F;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text h1 {
+    font-size: 80px;
+    font-weight: 300;
+    margin: 0;
+    color: #16324F;
+    /* Deep Ocean Blue */
+    line-height: 1.2;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #16324F;
+    /* Bright Electric Blue */
+    max-width: 500px;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.welcome-image img:hover {
+    transform: scale(1.05);
+}
+
+
 
 /* Section Layout */
 .education,
@@ -20,42 +78,110 @@ body {
 .contact {
     max-width: 800px;
     margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #FFFFFF;
+    /* Pure White */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #16324F;
+}
+
+.education:hover,
+.projects:hover,
+.contact:hover {
+    transform: translateY(-10px);
 }
 
 /* Cards */
 .card {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #EAF6FF;
+    /* Soft Light Blue */
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    color: #16324F;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
-    color: #333;
+    color: #16324F;
+    margin-top: 0;
 }
 
 .card a {
-    color: #3498db;
+    color: #3A8DFF;
+    /* Bright Electric Blue */
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Contact Links */
-.contact .social-links a {
-    margin: 0 10px;
-    color: #3498db;
-    text-decoration: none;
+.card a:hover {
+    color: #A3FF67;
+    /* Lime Green Accent */
 }
+
+/* Flexbox for Project Content */
+.title-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the Project Logo */
+.project-logo {
+    max-width: 30px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+/* Adjust Heading */
+.title-logo h3 {
+    margin: 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact {
+    text-align: center;
+}
+
+
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #16324F;
+    /* Deep Ocean Blue */
+    color: #FFFFFF;
     margin-top: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

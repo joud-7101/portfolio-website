@@ -5,75 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styleSheet.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <h1>Joud albeladi</h1>
-        <p>software engineer</p>
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h1>Welcome.</h1>
+                <p>My name is Joud Albeladi, a software engineering student at the University of Jeddah. I am passionate
+                    about developing innovative solutions and have worked on projects like Tadawa and Rasid, focusing on
+                    wed and app development.</p>
+            </div>
+            <div class="welcome-image">
+                <img src="labtop2.JPG" alt="Coding Setup">
+            </div>
+        </div>
     </header>
 
     <!-- Education Section -->
     <section class="education">
         <h2>Education</h2>
         <div class="card">
-            <h3>software engineering</h3>
-            <p>university of jeddah (2022 - 2026)</p>
-            <ul>
-                <li>Course or Certificate Name</li>
-                <li>Award or Achievement</li>
-            </ul>
+            <h3>Software Engineering</h3>
+            <p>University of Jeddah (2022 - 2026)</p>
+
         </div>
     </section>
 
     <!-- Projects Section -->
     <section class="projects">
         <h2>Projects</h2>
-        <div class="card">
-            <h3>Tadawa</h3>
-            <div class="card">
-                <h3>Tadawa</h3>
-                <!-- App Logo -->
-                <img src="path_to_logo.png" alt="Tadawa Logo" class="project-logo">
-                <p>Welcome to Tadawa, a mobile application designed to help users manage their medication schedules and
-                    medical appointments efficiently. This app provides timely reminders for medication intake and
-                    hospital visits, promoting better health management and adherence to treatment plans.</p>
-                <h4>💡 Features</h4>
-                <ul>
-                    <li>User Registration & Login: Secure account creation and authentication using Firebase</li>
-                    <li>Profile Management: Users can easily manage their personal profiles</li>
-                    <li>Medication Management: Add, edit, and delete medications</li>
-                    <li>Appointment Scheduling: Add and manage upcoming hospital appointments</li>
-                    <li>Notifications: Receive timely alerts for medication times and upcoming appointments</li>
-                    <li>Supply Management: Alerts for low medication stock and expiration dates</li>
-                    <li>Theme Preferences: Choose between dark and light mode for better user experience</li>
-                    <li>Multilingual Support: Supports both Arabic and English languages</li>
-                </ul>
-                <a href="https://github.com/AreejAljuhani/Tadawa-app" target="_blank">View on GitHub</a>
-            </div>
 
-            <div class="card">
-                <h3>Rasid</h3>
-                <p>Project Description</p>
-                <a href="https://github.com/Majd-sud/RASID" target="_blank">View on GitHub</a>
+        <div class="card">
+            <div class="title-logo">
+                <img src="tadawaLogo.png" alt="Tadawa Logo" class="project-logo">
+                <h3>Tadawa</h3>
             </div>
+            <p>Welcome to Tadawa, a mobile application designed to help users manage their medication schedules and
+                medical appointments efficiently.</p>
+            <ul>
+                <li>Secure account creation using Firebase</li>
+                <li>Medication management and notifications</li>
+                <li>Dark and light mode preferences</li>
+            </ul>
+            <a href="https://github.com/AreejAljuhani/Tadawa-app" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="card">
+            <div class="title-logo">
+                <img src="RasidLogo.png" alt="Rasid Logo" class="project-logo">
+                <h3>Rasid</h3>
+            </div>
+            <p>Rasid is an innovative IoT system designed to enhance safety during public celebrations and events.</p>
+            <ul>
+                <li>Real-time violation detection</li>
+                <li>Instant alerts and actions</li>
+                <li>User-friendly interface</li>
+            </ul>
+            <a href="https://github.com/Majd-sud/RASID" target="_blank">View on GitHub</a>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
         <h2>Contact Info</h2>
         <div class="social-links">
-            <a href="mailto:ajoud7101@gmai.com">Email</a>
-            <a href="https://github.com/joud-7101" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/joud-albeladi-b42479322/" target="_blank">LinkedIn</a>
+            <a href="mailto:ajoud7101@gmai.com" target="_blank">
+                <img src="email-icon.png" alt="Email Icon"> Email
+            </a>
+            <a href="https://github.com/joud-7101" target="_blank">
+                <img src="hithubIcon.JPG" alt="GitHub Icon"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/joud-albeladi-b42479322/" target="_blank">
+                <img src="lindinIcon.png" alt="LinkedIn Icon"> LinkedIn
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Joud albeladi. All rights reserved.</p>
+        <p>© 2025 Joud Albeladi. All rights reserved.</p>
     </footer>
 </body>
 
