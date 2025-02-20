@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #3498db;
+    color: white;
+}
+
+/* Section Layout */
+.education,
+.projects,
+.contact {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Contact Links */
+.contact .social-links a {
+    margin: 0 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
