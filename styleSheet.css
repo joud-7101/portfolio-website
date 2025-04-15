@@ -1,149 +1,138 @@
-/* General Styles */
+/* Base Styles */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #EAF6FF;
-    /* Soft Light Blue */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     color: #16324F;
-    /* Deep Ocean Blue */
 }
 
-/* Header Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reusable Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
 .header {
-    background-color: #FFFFFF;
-    /* Pure White */
-    color: #16324F;
+    background-color: #fff;
     padding: 100px 20px;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    text-align: left;
 }
 
-.welcome-container {
+.welcome {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    gap: 50px;
-    position: relative;
-    z-index: 2;
+    gap: 40px;
 }
 
-.welcome-text {
-    flex: 1;
+.welcome .text {
+    flex: 1 1 50%;
 }
 
-.welcome-text h1 {
-    font-size: 80px;
-    font-weight: 300;
-    margin: 0;
-    color: #16324F;
-    /* Deep Ocean Blue */
-    line-height: 1.2;
+.welcome .text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.welcome-text p {
-    font-size: 20px;
+.welcome .text p {
+    font-size: 18px;
     line-height: 1.6;
-    color: #16324F;
-    /* Bright Electric Blue */
-    max-width: 500px;
 }
 
-.welcome-image img {
-    max-width: 100%;
-    height: auto;
+.welcome .image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.welcome img {
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    animation: float 6s ease-in-out infinite;
     transition: transform 0.3s;
 }
 
-.welcome-image img:hover {
+.welcome img:hover {
     transform: scale(1.05);
 }
 
-
-
-/* Section Layout */
-.education,
-.projects,
-.contact {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #FFFFFF;
-    /* Pure White */
+/* Section Styles */
+.section {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    color: #16324F;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Hover Bounce for Education and Projects */
 .education:hover,
-.projects:hover,
-.contact:hover {
+.projects:hover {
     transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* Cards */
 .card {
     background-color: #EAF6FF;
-    /* Soft Light Blue */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
-    color: #16324F;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-header .logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
 .card h3 {
-    color: #16324F;
-    margin-top: 0;
+    margin: 0;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
 .card a {
+    display: inline-block;
+    margin-top: 10px;
     color: #3A8DFF;
-    /* Bright Electric Blue */
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .card a:hover {
     color: #A3FF67;
-    /* Lime Green Accent */
-}
-
-/* Flexbox for Project Content */
-.title-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Style for the Project Logo */
-.project-logo {
-    max-width: 30px;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 5px;
-}
-
-/* Adjust Heading */
-.title-logo h3 {
-    margin: 0;
 }
 
 /* Social Links */
@@ -151,15 +140,16 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .social-links a {
-    color: #333;
-    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+    color: #16324F;
 }
 
 .social-links img {
@@ -167,21 +157,39 @@ body {
     height: 24px;
 }
 
-.contact {
-    text-align: center;
-}
-
-
-
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
     background-color: #16324F;
-    /* Deep Ocean Blue */
-    color: #FFFFFF;
+    color: #fff;
     margin-top: 30px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome .text h1 {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
