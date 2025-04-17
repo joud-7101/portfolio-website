@@ -12,11 +12,31 @@ img {
     height: auto;
 }
 
-/* Reusable Layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-switch button {
+    background-color: #3A8DFF;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language-switch button:hover {
+    background-color: #2a6dcc;
 }
 
 /* Header Section */
@@ -65,7 +85,7 @@ img {
     transform: scale(1.05);
 }
 
-/* Section Styles */
+/* Sections */
 .section {
     background-color: #fff;
     margin: 40px auto;
@@ -79,13 +99,6 @@ img {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
-}
-
-/* Hover Bounce for Education and Projects */
-.education:hover,
-.projects:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* Cards */
@@ -113,10 +126,6 @@ img {
     width: 32px;
     height: 32px;
     border-radius: 4px;
-}
-
-.card h3 {
-    margin: 0;
 }
 
 .card ul {
@@ -150,11 +159,12 @@ img {
     gap: 8px;
     text-decoration: none;
     color: #16324F;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.social-links img {
-    width: 24px;
-    height: 24px;
+.social-links i {
+    font-size: 20px;
 }
 
 /* Footer */
@@ -168,7 +178,7 @@ img {
     border-top-right-radius: 20px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     .welcome {
         flex-direction: column;
@@ -192,4 +202,43 @@ img {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+/* RTL Support */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .project-header {
+    flex-direction: column;
+    /* Stack vertically */
+    align-items: flex-end;
+    /* Align to the right */
+    text-align: right;
+    /* Ensure text is right-aligned */
+}
+
+
+html[dir="rtl"] .social-links a {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .card ul {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+/* Stack the logo above the title and align right in RTL */
+html[dir="rtl"] .project-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.project-header .logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 8px;
 }
