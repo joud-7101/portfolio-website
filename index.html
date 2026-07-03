@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joud Albeladi — Software Engineer Portfolio</title>
+  <meta name="description" content="Joud Samel Albeladi — Software Engineering student at University of Jeddah, building full-stack apps, IoT systems, and AI-powered solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">Joud.</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="joud_cv.pdf" download class="btn btn-ghost btn-sm" id="cv-download-nav">
+          <!-- download icon -->
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-nav" id="contact-btn-nav">Hire me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a href="joud_cv.pdf" download class="btn btn-ghost" style="margin-top:8px">Download CV</a></li>
+        <li><a href="#contact" class="btn btn-nav">Hire me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="star star-1">✦</div>
+    <div class="star star-2">✦</div>
+    <div class="star star-3">+</div>
+    <div class="star star-4">+</div>
+    <div class="star star-5">✦</div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        BSc Software Engineering · GPA 4.76 / 5.00
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm Joud Albeladi —<br />
+        <em>I build software that matters.</em>
+      </h1>
+      <p class="hero-sub">
+        Full-stack developer &amp; software engineer crafting web platforms, IoT systems,
+        and AI-powered applications — from idea to deployment.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="view-work-btn">View my work</a>
+        <a href="joud_cv.pdf" download class="btn btn-ghost" id="cv-download-hero">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download CV
+        </a>
+      </div>
+      <!-- Quick contact chips -->
+      <div class="hero-chips">
+        <a href="mailto:joudsamelalbeladi@gmail.com" class="chip" id="email-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+          joudsamelalbeladi@gmail.com
+        </a>
+        <a href="https://github.com/JoudAlbeladi" target="_blank" rel="noopener" class="chip" id="github-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/joud-albeladi" target="_blank" rel="noopener" class="chip" id="linkedin-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Next.js</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>Flutter</span><span class="sep">✦</span>
+      <span>Python</span><span class="sep">✦</span>
+      <span>Azure SQL</span><span class="sep">✦</span>
+      <span>IoT</span><span class="sep">✦</span>
+      <span>Three.js</span><span class="sep">✦</span>
+      <span>Power BI</span><span class="sep">✦</span>
+      <span>React</span><span class="sep">✦</span>
+      <span>Next.js</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>Node.js</span><span class="sep">✦</span>
+      <span>Flutter</span><span class="sep">✦</span>
+      <span>Python</span><span class="sep">✦</span>
+      <span>Azure SQL</span><span class="sep">✦</span>
+      <span>IoT</span><span class="sep">✦</span>
+      <span>Three.js</span><span class="sep">✦</span>
+      <span>Power BI</span><span class="sep">✦</span>
+      <span>React</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="section-label">About me</p>
+        <h2 class="about-title">Software engineer,<br />problem solver,<br /><em>hackathon winner.</em></h2>
+        <p class="about-desc">I'm Joud Samel Albeladi — a final-year Software Engineering student at the University of Jeddah (Class of 2026) with a GPA of 4.76 / 5.00. I love building products that bridge the gap between cutting-edge technology and real human needs, from peer-to-peer marketplace platforms to AI-powered IoT systems.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">4.76</span>
+            <span class="stat-label">GPA / 5.00</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Full-stack projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">🥈</span>
+            <span class="stat-label">Absher Hackathon 2025</span>
+          </div>
+        </div>
+        <div class="about-actions">
+          <a href="#contact" class="btn btn-primary" id="about-contact-btn">Work with me →</a>
+          <a href="joud_cv.pdf" download class="btn btn-ghost" id="cv-download-about">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="about-image-wrap">
+        <div class="about-img-blob"></div>
+        <div class="about-img-card">
+          <!-- Replace this block with <img src="your-photo.jpg" alt="Joud Albeladi"> once you have a photo -->
+          <div class="about-img-placeholder">
+            <div class="about-initials">J</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-icon">🏆</span>
+          <div>
+            <span class="about-badge-main">2nd Place</span>
+            <span class="about-badge-sub">Absher Hackathon 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section process-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience &amp; Education <span class="spark">✦</span></h2>
+        <p class="section-desc">A timeline of the work and study that shaped my engineering mindset.</p>
+      </div>
+
+      <div class="process-list">
+
+        <!-- Internship -->
+        <div class="process-item" data-step="01">
+          <div class="process-num">01</div>
+          <div class="process-body">
+            <div class="process-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3 class="process-step-title">Summer Intern — Sallam Tech</h3>
+              <p class="exp-date">June 2025 – August 2025 · Internship</p>
+              <ul class="exp-bullets">
+                <li>Participated in designing and developing the company's website, contributing to front-end and back-end features.</li>
+                <li>Collaborated with the team to improve user experience, ensure responsive design, and deliver a functional product.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hackathon -->
+        <div class="process-item" data-step="02">
+          <div class="process-num">02</div>
+          <div class="process-body">
+            <div class="process-icon process-icon--amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="process-step-title">🥈 2nd Place — Absher Hackathon</h3>
+              <p class="exp-date">2025 · National-level Competition</p>
+              <ul class="exp-bullets">
+                <li>Participated in a national-level hackathon focused on enhancing digital government services.</li>
+                <li>Earned second place for developing an innovative, impactful solution.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="process-item" data-step="03">
+          <div class="process-num">03</div>
+          <div class="process-body">
+            <div class="process-icon process-icon--violet">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v5c3 3 9 3 12 0v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="process-step-title">BSc Software Engineering — University of Jeddah</h3>
+              <p class="exp-date">Expected Graduation 2026 · GPA 4.76 / 5.00</p>
+              <ul class="exp-bullets">
+                <li>Studying core software engineering principles: algorithms, databases, software architecture, and AI.</li>
+                <li>Active participant in hackathons and project-based learning with Agile Scrum methodology.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects <span class="spark">✦</span></h2>
+        <a href="https://github.com/JoudAlbeladi" target="_blank" rel="noopener" class="section-cta">View all on GitHub →</a>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- ── PROJECT 1: Si'aa ── -->
+        <article class="project-card" id="project-1">
+          <div class="project-meta">
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">Azure SQL</span>
+              <span class="tag">Three.js</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-name">Si'aa — Peer-to-Peer Storage Booking Platform</h3>
+                <p class="project-year">Mar 2025 – Jun 2026</p>
+                <p class="project-desc">Full-stack platform enabling users to discover, book, and manage nearby storage spaces with secure authentication and integrated logistics. Features 3D space visualization, map-based search, and user dashboards using Three.js and Leaflet.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LamaMN/siaa-storage-system" target="_blank" rel="noopener" class="project-github-btn" id="github-siaa">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+          <div class="project-img-wrap">
+            <div class="carousel" id="carousel-1">
+              <div class="carousel-track">
+                <img src="media/SIAA.png"  alt="Si'aa — screenshot 1" class="carousel-slide" />
+                <img src="media/SIAA1.png" alt="Si'aa — screenshot 2" class="carousel-slide" />
+                <img src="media/SIAA2.png" alt="Si'aa — screenshot 3" class="carousel-slide" />
+                <img src="media/SIAA3.png" alt="Si'aa — screenshot 4" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn carousel-btn--prev" aria-label="Previous">&#8249;</button>
+              <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8250;</button>
+              <div class="carousel-dots" id="dots-1"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2: Hazem ── -->
+        <article class="project-card" id="project-2">
+          <div class="project-img-wrap">
+            <div class="carousel" id="carousel-2">
+              <div class="carousel-track">
+                <img src="media/HAZEM.png"  alt="Hazem — screenshot 1" class="carousel-slide" />
+                <img src="media/HAZEM1.png" alt="Hazem — screenshot 2" class="carousel-slide" />
+                <img src="media/HAZEM2.png" alt="Hazem — screenshot 3" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn carousel-btn--prev" aria-label="Previous">&#8249;</button>
+              <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8250;</button>
+              <div class="carousel-dots" id="dots-2"></div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">IoT</span>
+              <span class="tag">AI / Camera Detection</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-name">Hazem — IoT-Based Safety Monitoring System</h3>
+                <p class="project-year">Sep 2024 – Nov 2024</p>
+                <p class="project-desc">AI-powered IoT system with real-time camera detection to monitor public safety violations during events. Automated violation reporting through a responsive Flutter web interface and integrated alert system.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/joud-7101/hazem_website" target="_blank" rel="noopener" class="project-github-btn" id="github-hazem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 3: SkillsTarde ── -->
+        <article class="project-card" id="project-3">
+          <div class="project-meta">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">SQL</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-name">SkillsTarde — Community Skill Exchange</h3>
+                <p class="project-year">Apr 2025 – May 2025</p>
+                <p class="project-desc">Full-stack web platform to enable users to trade skills by teaching and learning without financial exchange. Built user authentication, skill listings, and messaging features to support a self-sustaining learning community.</p>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/joud-7101/skillsTrade" target="_blank" rel="noopener" class="project-github-btn" id="github-skillstarde">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+          <div class="project-img-wrap">
+            <div class="carousel" id="carousel-3">
+              <div class="carousel-track">
+                <img src="media/SKILLSTRADE.png"  alt="SkillsTarde — screenshot 1" class="carousel-slide" />
+                <img src="media/SKILLSTRADE1.png" alt="SkillsTarde — screenshot 2" class="carousel-slide" />
+                <img src="media/SKILLSTRADE2.png" alt="SkillsTarde — screenshot 3" class="carousel-slide" />
+                <img src="media/SKILLSTRADE3.png" alt="SkillsTarde — screenshot 4" class="carousel-slide" />
+              </div>
+              <button class="carousel-btn carousel-btn--prev" aria-label="Previous">&#8249;</button>
+              <button class="carousel-btn carousel-btn--next" aria-label="Next">&#8250;</button>
+              <div class="carousel-dots" id="dots-3"></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills &amp; Certifications <span class="spark">✦</span></h2>
+        <p class="section-desc">Technologies I work with and credentials I've earned.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⌨️</span> Programming Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Dart</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🛠️</span> Developer Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">Asana</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Azure SQL</span>
+            <span class="skill-tag">Three.js</span>
+            <span class="skill-tag">Leaflet</span>
+            <span class="skill-tag">Node.js / Express</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🤝</span> Soft Skills
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership &amp; Communication</span>
+            <span class="skill-tag">Problem-Solving</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Agile / Scrum</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🌍</span> Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--lang">Arabic — Native</span>
+            <span class="skill-tag skill-tag--lang">English — Fluent</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-wrap">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card" id="cert-1">
+            <div class="cert-icon">☁️</div>
+            <div>
+              <span class="cert-name">Azure AI Fundamentals</span>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+          </div>
+          <div class="cert-card" id="cert-2">
+            <div class="cert-icon">📊</div>
+            <div>
+              <span class="cert-name">Power BI Data Analyst Prep</span>
+              <span class="cert-issuer">Coursera</span>
+            </div>
+          </div>
+          <div class="cert-card" id="cert-3">
+            <div class="cert-icon">🔒</div>
+            <div>
+              <span class="cert-name">Cloud Security &amp; Monitoring</span>
+              <span class="cert-issuer">Microsoft Applied Skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="star star-c1">+</div>
+        <div class="star star-c2">✦</div>
+        <p class="section-label">Have an idea about a project? <span class="spark">✦</span></p>
+        <h2 class="contact-title">Let's build something<br /><em>remarkable together.</em></h2>
+        <p class="contact-sub">Whether you have a complete brief or just a rough idea, I'd love to hear about it. You can also reach me directly at <a href="mailto:joudsamelalbeladi@gmail.com" style="color:var(--purple-bright)">joudsamelalbeladi@gmail.com</a></p>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Alex Johnson" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project">Tell me about your project</label>
+            <textarea id="project" name="project" rows="5" placeholder="I need a full-stack web app..." required></textarea>
+          </div>
+          <div class="form-row form-row--bottom">
+            <div class="form-group">
+              <label for="budget">Project type</label>
+              <select id="budget" name="budget">
+                <option value="">Select type...</option>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile App</option>
+                <option value="iot">IoT / Embedded</option>
+                <option value="ai">AI / Data</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">Send message →</button>
+          </div>
+        </form>
+        <div class="contact-form-success" id="form-success" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h3>Message received!</h3>
+          <p>I'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="nav-logo">Joud.</a>
+      <p class="footer-copy">© 2025 Joud Samel Albeladi · University of Jeddah</p>
+      <div class="footer-socials">
+        <a href="https://github.com/JoudAlbeladi" target="_blank" rel="noopener" class="social-link" id="footer-github" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/joud-albeladi" target="_blank" rel="noopener" class="social-link" id="footer-linkedin" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="mailto:joudsamelalbeladi@gmail.com" class="social-link" id="footer-email" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="joud_cv.pdf" download class="social-link" id="footer-cv" aria-label="Download CV" title="Download CV">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-nav--prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+    <button class="lightbox-nav lightbox-nav--next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
